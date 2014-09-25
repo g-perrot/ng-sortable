@@ -57,7 +57,10 @@ The directives are structured like below.
 
 Following callbacks are defined, and should be overridden to perform custom logic.
 
+If you are draging an element from a scope to another scope, and the scopes are using different controllers, the callbacks called will be the ones defined in the  controller of the destination scope. (Useful in the case of nested sortables)
+
 - callbacks.accept = function (sourceItemHandleScope, destSortableScope) {}; //used to determine drag zone is allowed are not.
+
 
 ###### Parameters:
      sourceItemScope - the scope of the item being dragged.
